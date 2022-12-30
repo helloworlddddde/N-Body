@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="872.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="396.0">
+              <items>
+                <Button fx:id="layerButton" mnemonicParsing="false" onMouseClicked="#onClick" text="Add Layer" />
+                  <Button fx:id="feedButton" mnemonicParsing="false" onMouseClicked="#onClick" text="Add Layer" />
+              </items>
+            </ToolBar>
+         </children>
+      </HBox>
+      <ScrollPane fitToWidth="true" layoutY="66.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
+         <content>
+            <VBox fx:id="VBlock" alignment="TOP_CENTER" prefHeight="434.0" prefWidth="1000.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
